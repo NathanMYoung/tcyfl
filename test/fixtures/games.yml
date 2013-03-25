@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  gamedate: 2013-03-23
+  gametime: 2013-03-23 11:09:31
+  hometeamId: 1
+  visitorteamId: 1
+  playingfieldId: 1
+
+two:
+  gamedate: 2013-03-23
+  gametime: 2013-03-23 11:09:31
+  hometeamId: 1
+  visitorteamId: 1
+  playingfieldId: 1

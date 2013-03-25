@@ -1,0 +1,22 @@
+<h1>Display a team</h1>
+<p>
+	<h2>
+		<%= @team.community %> <%= @team.weight %> <%= @team.level %>
+	</h2>
+</p>
+<p>
+	<table border="1">
+		<tr>
+			<td>Primary Field</td><td><%= @playingfield.fieldname %></td>
+		</tr>
+		<tr>
+			<td>Secondary Field</td><td><%= @playingfield2.fieldname %></td>
+		</tr>
+	</table>
+</p>
+
+<p>
+<%= link_to "Delete", @team, :confirm=>"Confirm Delete?", :method=> :delete %>
+</p>
+<hr/>
+	<p><small>Team created at: <%= @team.created_at %></small></p>

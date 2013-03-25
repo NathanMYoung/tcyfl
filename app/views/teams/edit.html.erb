@@ -1,0 +1,36 @@
+<h1>TCYFL Program Scheduler</h1>
+<hr/>
+<h2>Team Editor</h2>
+
+
+<%= form_for @team do |f| %>
+	<p>
+		<%= f.label :community %><br/>
+		<%= f.text_field :community %>
+	</p>
+	<p>
+		<%= f.select :weight, [['Bantam', "Bantam"],['Feather',"Feather"],['Middle',"Middle"],['Light',"Light"],['Heavy',"Heavy"]] %>
+	</p>
+	<p>
+		<%= f.select :level, [['Big10', "Big10"],['Mac10',"Mac10"],['Pac10',"Pac10"]] %>
+	</p>
+
+	<p>
+		<%= f.label :namecolor %><br/>
+		<%= f.text_field :namecolor %>
+	</p>
+
+	<p>
+		Primary Field: 
+		<%= f.select :firstfield, [['Cary Jr High',1],['Galway',2],['Barrington',3]] %>
+	</p>
+	<p>
+		Secondary Field: 
+		<%= f.select :secondfield, [['Cary Jr High',1],['Galway',2],['Barrington',3]] %>
+	</p>
+
+
+	<p>
+		<%= f.submit "Update Team Information" %>
+	</p>
+<% end %>

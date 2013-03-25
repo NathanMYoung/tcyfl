@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  game1: 1
+  game2: 1
+  game3: 1
+  game4: 1
+  game5: 1
+  game6: 1
+  game7: 1
+  game8: 1
+  game9: 1
+
+two:
+  game1: 1
+  game2: 1
+  game3: 1
+  game4: 1
+  game5: 1
+  game6: 1
+  game7: 1
+  game8: 1
+  game9: 1

@@ -1,0 +1,26 @@
+<h1>TCYFL Scheduler</h1>
+<hr/>
+<h2>Team Listings: <%= @teams.count%> total teams</h2>
+
+	
+
+	<% @teams.group_by(&:community).each do |community, teams| %>
+		<h1><%=community%></h1>
+		<ul>
+			<% for team in teams %>
+				<% if team.namecolor %>
+					<li>
+						<%= link_to team.weight+' '+team.level+' '+team.namecolor, team %> <small><%= link_to "Edit", edit_team_path(team)%> <%= link_to "Delete", team, :confirm=>"Confirm Delete?", :method=> :delete %></small>
+					</li>
+
+				<% else %>
+					<li>
+						<%= link_to team.weight+' '+team.level, team %> <small><%= link_to "Edit", edit_team_path(team)%> <%= link_to "Delete", team, :confirm=>"Confirm Delete?", :method=> :delete %></small>
+					</li>
+				<% end %>
+			<% end %>
+		</ul>
+	<% end %>
+
+<p><%= link_to "Add a New Team", new_team_path %>
+

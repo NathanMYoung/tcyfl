@@ -1,0 +1,13 @@
+<h1>TCYFL Scheduler</h1>
+<hr/>
+<h2>Schedule Homepage</h2>
+
+<ul>
+<% for gameschedule in @gameschedules %>
+		<li>
+			<%= gameschedule.id %>  <%= link_to "Delete", gameschedule, :confirm=>"Confirm Delete?", :method=> :delete %>
+		</li>
+<% end %>
+</ul>
+<hr>
+<p><%= link_to "Create a new Season Schedule", new_gameschedule_path %>
